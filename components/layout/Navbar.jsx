@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -10,11 +11,11 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Utama", href: "" },
-    { name: "Info eMasjid", href: "#" },
-    { name: "Carian Masjid", href: "#" },
-    { name: "Semakan Permohonan", href: "#" },
-    { name: "Soalan Lazim", href: "#" },
+    { name: "Utama", href: "/" },
+    { name: "Info eMasjid", href: "/info-emasjid" },
+    { name: "Carian Masjid", href: "/carian-masjid" },
+    { name: "Semakan Permohonan", href: "/semakan-permohonan" },
+    { name: "Soalan Lazim", href: "/soalan-lazim" },
   ];
 
   const linkStyle = isHome
@@ -30,19 +31,18 @@ export default function Navbar() {
       }`}
     >
       {/* Desktop Nav */}
-      <ul className="hidden md:flex justify-center space-x-15">
+      <ul className="hidden md:flex justify-center gap-10">
         {navItems.map((item) => (
           <li key={item.name}>
-            <a href={item.href} className={`font-medium ${linkStyle}`}>
+            <Link href={item.href} className={`font-medium ${linkStyle}`}>
               {item.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
 
-      {/* Mobile Nav Toggle */}
-      <div className="md:hidden flex justify-between items-center">
-        {/* <div className="text-xl font-bold text-white">eMasjid</div> */}
+      {/* Mobile Toggle */}
+      <div className="md:hidden flex justify-end">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className={`text-2xl ${isHome ? "text-white" : "text-gray-800"}`}
@@ -51,18 +51,18 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Nav Menu */}
+      {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="md:hidden mt-4 flex flex-col items-start gap-4 bg-[#164776] rounded-md p-4 shadow-md">
+        <ul className="md:hidden mt-4 flex flex-col gap-4 bg-[#164776] rounded-md p-4 shadow-md">
           {navItems.map((item) => (
             <li key={item.name}>
-              <a
+              <Link
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
                 className="text-white hover:text-[#0C9F77] font-medium"
               >
                 {item.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
