@@ -1,5 +1,5 @@
 export default function sitemap() {
-const baseUrl = "https://e-mosjid-blog-page-hnuy.vercel.app";
+const baseUrl = `${process.env.NEXT_PUBLIC_SITE_URL}`;
 
   return [
     {

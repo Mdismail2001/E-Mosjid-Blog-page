@@ -4,5 +4,5 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://e-mosjid-blog-page-hnuy.vercel.app/sitemap.xml",  };
+    sitemap: `${process.env.NEXT_PUBLIC_SITE_URL}/sitemap.xml`  };
 }
