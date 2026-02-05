@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Carian Masjid - Portal eMasjid MAIS",
+  title: "Carian Masjid - Portal eMasjid",
   description: "Cari masjid dengan mudah melalui halaman Carian Masjid Emosjid Blog. Dapatkan lokasi, maklumat, dan panduan untuk setiap masjid.",
 };
 

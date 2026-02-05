@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 //   },
 // };
 export const metadata = {
-  title: "Portal eMasjid MAIS | Sistem Pengurusan Masjid Selangor",
+  title: "Portal eMasjid  | Sistem Pengurusan Masjid Selangor",
   description:
     "Portal eMasjid MAIS ialah sistem pengurusan pintar masjid untuk permohonan, kemaskini dan pengurusan masjid di Selangor.",
   verification: {

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Soalan Lazim - Portal eMasjid MAIS",
+  title: "Soalan Lazim - Portal eMasjid",
   description: "Lihat jawapan untuk soalan lazim mengenai Emosjid Blog, panduan, dan info berguna.",
 };
 

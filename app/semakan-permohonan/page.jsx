@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Semakan Permohonan - Portal eMasjid MAIS",
+  title: "Semakan Permohonan - Portal eMasjid ",
   description: "Semak status permohonan anda dengan mudah melalui halaman Semakan Permohonan Emosjid Blog.",
 };
 
