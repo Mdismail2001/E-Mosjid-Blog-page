@@ -14,8 +14,8 @@ export default function Navbar() {
     { name: "Utama", href: "/" },
     { name: "Info eMasjid", href: "/info-emasjid" },
     { name: "Carian Masjid", href: "/carian-masjid" },
-    { name: "Semakan Permohonan", href: "/semakan-permohonan" },
-    { name: "Soalan Lazim", href: "/soalan-lazim" },
+    { name: "About Us", href: "/about-us" },
+    { name: "Contact Us", href: "/contact-us" },
   ];
 
   const linkStyle = isHome
